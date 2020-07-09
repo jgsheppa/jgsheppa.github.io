@@ -1,0 +1,15 @@
+{
+  "name": "Personal_Website",
+  "version": "1.0.0",
+  "description": "This is a bare-bones HTML page (`home.html`) with a stylesheet (`style.css`), and a javascript file (`script.js`).",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
