@@ -66,7 +66,7 @@ body {
   
   .topnav {
     background-color: #FAEC8C;
-    margin-left: 9px;
+    margin-left: 12px;
     border-style: solid;
     border-color: #121212;
     border-radius: 5px;
@@ -95,11 +95,16 @@ body {
     background-color: #fab58c;
     color: #121212;
   }
-  
+
+  .topnav-container {
+    margin-left: 40px;
+    margin-bottom: 32px;
+  }
   
   .logo-container {
       display: flex;
       justify-content: center;
+      margin-bottom: 40px;
     }
   
 .logo {
@@ -145,18 +150,13 @@ body {
   margin-left: 20px;
   margin-top: 20px;
   line-height: 1.5;
-  border-bottom-style: dashed;
-  border-left-style: solid;
-  border-right-style: solid;
-  border-top-style: dashed;
-  border-color: #7a49a5;
   border-radius: 5px;
   border-width: 5px;
 }
 
 .footer { 
-  background-color: #7a49a5;
-  color: white;
+  background-color: white;
+  color: black;
   font-weight: bold;
   padding: 10px;
   position: fixed;

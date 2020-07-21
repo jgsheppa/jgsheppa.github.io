@@ -124,6 +124,13 @@ margin-top: 30px;
   display: flex;
 }
 
+.topnav-container {
+  display: flex;
+  margin-left: 40px;
+  margin-bottom: 32px;
+  
+}
+
 .pagelink {
     color: #121212; 	
     font-weight: bold;
@@ -133,8 +140,8 @@ margin-top: 30px;
     background-color: #FAEC8C;
     overflow: hidden;
     margin-top: 24px;
-    margin-bottom: 4px;
-    margin-left: 8px;
+    margin-bottom: 32px;
+    margin-left: 48px;
     border-style: solid;
     border-color: #121212;
     border-radius: 5px;
@@ -149,6 +156,7 @@ margin-top: 30px;
 
 .pagelink_container {
   display: flex;
+  margin-bottom: 64px;
 }
 
 .flexbox {
@@ -158,9 +166,6 @@ margin-top: 30px;
 }
 
 #bachtin_img {
-  border-left-style: dashed;
-  border-top-style: dashed;
-  border-width: 8px;
   padding: 20px;
 }
 
@@ -168,6 +173,7 @@ margin-top: 30px;
   font-style: italic;
   font-size: 15px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 20px;
   margin-left: 20px;
   margin-top: 5px;
 }
@@ -178,7 +184,6 @@ margin-top: 30px;
   padding: 10px;
   font-size: 15px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-left: 20px;
   margin-top: 5px;
 }
 
@@ -197,11 +202,12 @@ margin-top: 30px;
 .text {
   margin-left: 25px;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 .footer { 
-  background-color: #7a49a5;
-  color: white;
+  background-color: white;
+  color: black;
   font-weight: bold;
   padding: 10px;
   position: fixed;

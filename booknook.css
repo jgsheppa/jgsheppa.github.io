@@ -113,6 +113,13 @@ body {
   .topnav-container {
       display: flex;
     }
+
+.topnav-container {
+  display: flex;
+  margin-left: 40px;
+  margin-bottom: 32px;
+  
+}
   
   .topnav {
     background-color: #FAEC8C;
@@ -141,13 +148,9 @@ body {
   margin-left: 20px;
   margin-top: 20px;
   line-height: 1.5;
-  border-bottom-style: dashed;
-  border-color: #7a49a5;
-  border-width: 5px;
 }
 
 .text {
-  margin-left: 25px;
   line-height: 1.5;
 }
 
@@ -160,8 +163,8 @@ body {
 }
 
 .footer { 
-  background-color: #7a49a5;
-  color: white;
+  background-color: white;
+  color: black;
   font-weight: bold;
   padding: 10px;
   position: fixed;

@@ -92,17 +92,17 @@ background-color: #FAEC8C;
   color: #121212;
 }
 
+.topnav-container {
+  margin-left: 40px;
+  margin-bottom: 32px;
+}
+
 .flexbox {
   display: flex;
   flex-direction: row-reverse;
 }
 
 #contact {
-  border-bottom-style: dashed;
-  border-left-style: solid;
-  border-right-style: solid;
-  border-top-style: dashed;
-  border-color: 	#7a49a5;
   border-width: 5px;
   border-radius: 5px;
   padding: 10px;
@@ -111,8 +111,8 @@ background-color: #FAEC8C;
 }
 
 .footer { 
-    background-color: #7a49a5;
-    color: white;
+  background-color: white;
+  color: black;
     font-weight: bold;
     padding: 10px;
     position: fixed;
