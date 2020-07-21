@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    min-height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  
+  body, body * {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+  
+  .front {
+    background-color: #35caa2;
+  }
+  
+  header h1{
+  border-style: solid;
+  margin-right: 975px;
+  margin-left: 50px;
+  border-color: #121212;
+  border-width: 5px;
+  border-radius: 12px;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: left;
+  background-color: #FAEC8C;
+  }
+  
+  .alt-header {
+    border-style: solid;
+    padding: 10px;
+    border-color: #121212;
+    border-width: 5px;
+    border-radius: 12px;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: left;
+    background-color: #FAEC8C;
+  }
+  
+  .logo {
+    border-style: solid;
+    border-color: #121212;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #FA8C91;
+  }
+  
+  .row {
+  
+  width: 13%;
+  margin-left: 100px;
+  margin-top: 30px;
+  }
+  
+  .caption {
+    
+    width: 20%;
+    margin-left: 30px;
+  }
+  
+  .topnav {
+    background-color: #FAEC8C;
+    margin-left: 9px;
+    border-style: solid;
+    border-color: #121212;
+    border-radius: 5px;
+    margin-top: 8px;
+    display: flex;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    color: #121212; 	
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #FAEC8C;
+    color: #121212;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #fab58c;
+    color: #121212;
+  }
+  
+  
+  .logo-container {
+      display: flex;
+      justify-content: center;
+    }
+  
+  .logo {
+    border-style: solid;
+    border-color: #121212;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #FA8C91;
+  }
+  
+  .topnav-container {
+      display: flex;
+    }
+  
+  .topnav {
+    background-color: #FAEC8C;
+    margin-left: 9px;
+    border-style: solid;
+    border-color: #121212;
+    border-radius: 5px;
+    margin-top: 8px;
+    display: flex;
+  }
+
+.flexbox {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.text_flexbox {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#booknook {
+  font-weight: bold;
+  padding: 20px;
+  margin-right: 500px;
+  margin-left: 20px;
+  margin-top: 20px;
+  line-height: 1.5;
+  border-bottom-style: dashed;
+  border-color: #7a49a5;
+  border-width: 5px;
+}
+
+.text {
+  margin-left: 25px;
+  line-height: 1.5;
+}
+
+.nook-row {
+  width: 25%;
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.footer { 
+  background-color: #7a49a5;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  position: fixed;
+  z-index: 50;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 16px;
+  display: flex;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
