@@ -9,11 +9,12 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 body, body * {
   box-sizing: border-box;
-  font-family: "Helvetica Neue", sans-serif;
+ 
 }
 
 .front {
@@ -45,13 +46,6 @@ background-color: #FAEC8C;
   background-color: #FAEC8C;
 }
 
-.logo {
-  border-style: solid;
-  border-color: #121212;
-  border-radius: 5px;
-  padding: 5px;
-  background-color: #FA8C91;
-}
 
 .row {
   width: 13%;
@@ -64,14 +58,27 @@ background-color: #FAEC8C;
   margin-left: 30px;
 }
 
-.topnav {
-  background-color: #FAEC8C;
-  margin-left: 12px;
-  border-style: solid;
-  border-color: #121212;
-  border-radius: 5px;
-  margin-top: 8px;
+.topnav-container {
   display: flex;
+}
+
+.topnav {
+background-color: #ffbe0d;
+margin-left: 9px;
+border-style: solid;
+border-color:black;
+border-radius: 5px;
+margin-top: 8px;
+display: flex;
+font-family: hobo-std, sans-serif;
+font-style: normal;
+}
+
+.topnav-container {
+display: flex;
+margin-left: 40px;
+margin-bottom: 32px;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -81,24 +88,22 @@ background-color: #FAEC8C;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
+  
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #FAEC8C;
-  color: #121212;
+  background-color: #FFBE0D;
+  color: white;
+  
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #fab58c;
-  color: #121212;
-}
-
-.topnav-container {
-  margin-left: 40px;
-  margin-bottom: 32px;
+  background-color: white;
+  color: #FF4860;
+ 
 }
 
 .flexbox {
@@ -128,6 +133,14 @@ background-color: #FAEC8C;
     display: flex;
   }
   
+  .logo {
+    border-style: solid;
+    border-color: #121212;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #ffbe0d;
+  }
+
   .logo-container {
     display: flex;
     justify-content: center;
@@ -135,9 +148,14 @@ background-color: #FAEC8C;
 
   .contact-container {
     display: flex;
-    justify-content: left;
+    flex-direction: row-reverse;
   }
   
   .topnav-container {
     display: flex;
+  }
+
+  .img {
+    width: 100%; 
+    height: auto; 
   }

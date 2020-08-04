@@ -17,19 +17,22 @@ body, body * {
 }
 
 .front {
-  background-color: #35caa2;
+  background-color: #ffbe0d;
 }
 
 header h1{
 border-style: solid;
-border-color: #121212;
+border-color: #ff4860;
 border-width: 5px;
 border-radius: 12px;
 padding: 10px 20px 10px 20px;
-font-weight: bold;
 font-size: 40px;
 text-align: left;
-background-color: #FAEC8C;
+background-color: white;
+color: #ff4860;
+font-family: hobo-std, sans-serif;
+font-style: normal;
+font-weight: 400;
 }
 
 .alt-header {
@@ -88,14 +91,16 @@ margin-top: 30px;
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #FAEC8C;
-  color: #121212;
+  background-color: #FFBE0D;
+  color: white;
+  
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #fab58c;
-  color: #121212;
+  background-color: white;
+  color: #FF4860;
+ 
 }
 
 .home-flexbox {
@@ -214,15 +219,11 @@ margin-top: 30px;
   border-width: 5px;
 }
 
-#my-img {
-  
-}
-
-
 .footer { 
   background-color: white;
-  color: black;
+  color: #ff4860;
   font-weight: bold;
+  font-family: hobo-std, sans-serif;
   padding: 10px;
   position: fixed;
   z-index: 50;

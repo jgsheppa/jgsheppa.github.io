@@ -9,11 +9,12 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
+    font-family: "Helvetica Neue", sans-serif;
   }
   
   body, body * {
     box-sizing: border-box;
-    font-family: "Helvetica Neue", sans-serif;
+    
   }
   
   .front {
@@ -47,13 +48,13 @@ body {
     background-color: #FAEC8C;
   }
   
-  .logo {
+.logo {
     border-style: solid;
     border-color: #121212;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #FA8C91;
-  }
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #ffbe0d;
+}
   
   .row {
   
@@ -68,72 +69,59 @@ body {
     margin-left: 30px;
   }
   
-  .topnav {
-    background-color: #FAEC8C;
-    margin-left: 9px;
-    border-style: solid;
-    border-color: #121212;
-    border-radius: 5px;
-    margin-top: 8px;
-    display: flex;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    color: #121212; 	
-    font-weight: bold;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #FAEC8C;
-    color: #121212;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #fab58c;
-    color: #121212;
-  }
-  
-  
   .logo-container {
       display: flex;
       justify-content: center;
     }
   
-  .logo {
-    border-style: solid;
-    border-color: #121212;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #FA8C91;
-  }
   
-  .topnav-container {
-      display: flex;
-    }
+.topnav-container {
+  display: flex;
+}
+
+.topnav {
+  background-color: #ffbe0d;
+  margin-left: 9px;
+  border-style: solid;
+  border-color:black;
+  border-radius: 5px;
+  margin-top: 8px;
+  display: flex;
+  font-family: hobo-std, sans-serif;
+  font-style: normal;
+}
 
 .topnav-container {
   display: flex;
   margin-left: 40px;
   margin-bottom: 32px;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #121212; 	
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
   
 }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #FFBE0D;
+  color: white;
   
-  .topnav {
-    background-color: #FAEC8C;
-    margin-left: 9px;
-    border-style: solid;
-    border-color: #121212;
-    border-radius: 5px;
-    margin-top: 8px;
-    display: flex;
-  }
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  color: #FF4860;
+ 
+}
 
 .flexbox {
   display: flex;

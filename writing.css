@@ -9,11 +9,11 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 body, body * {
   box-sizing: border-box;
-  font-family: "Helvetica Neue", sans-serif;
 }
 
 .front {
@@ -21,17 +21,17 @@ body, body * {
 }
 
 header h1{
-border-style: solid;
-margin-right: 975px;
-margin-left: 50px;
-border-color: #121212;
-border-width: 5px;
-border-radius: 12px;
-padding: 10px 20px 10px 20px;
-font-weight: bold;
-font-size: 40px;
-text-align: left;
-background-color: #FAEC8C;
+  border-style: solid;
+  margin-right: 975px;
+  margin-left: 50px;
+  border-color: #121212;
+  border-width: 5px;
+  border-radius: 12px;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: left;
+  background-color: #FAEC8C;
 }
 
 .alt-header {
@@ -47,36 +47,18 @@ background-color: #FAEC8C;
   background-color: #FAEC8C;
 }
 
-.logo {
-  border-style: solid;
-  border-color: #121212;
-  border-radius: 5px;
-  padding: 5px;
-  background-color: #FA8C91;
-}
 
 .row {
-
-width: 13%;
-margin-left: 100px;
-margin-top: 30px;
+  width: 13%;
+  margin-left: 100px;
+  margin-top: 30px;
 }
 
 .caption {
-  
   width: 20%;
   margin-left: 30px;
 }
 
-.topnav {
-  background-color: #FAEC8C;
-  margin-left: 9px;
-  border-style: solid;
-  border-color: #121212;
-  border-radius: 5px;
-  margin-top: 8px;
-  display: flex;
-}
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -85,19 +67,22 @@ margin-top: 30px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
+  
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #FAEC8C;
-  color: #121212;
+  background-color: #FFBE0D;
+  color: white;
+  
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #fab58c;
-  color: #121212;
+  background-color: white;
+  color: #FF4860;
+ 
 }
 
 
@@ -107,11 +92,11 @@ margin-top: 30px;
   }
 
 .logo {
-  border-style: solid;
-  border-color: #121212;
-  border-radius: 5px;
-  padding: 5px;
-  background-color: #FA8C91;
+    border-style: solid;
+    border-color: #121212;
+    border-radius: 4px;
+    padding: 4px;
+    background-color:  #ffbe0d;
 }
 
 .topnav-container {
@@ -119,13 +104,15 @@ margin-top: 30px;
   }
 
 .topnav {
-  background-color: #FAEC8C;
+  background-color: #ffbe0d;
   margin-left: 9px;
   border-style: solid;
-  border-color: #121212;
+  border-color:black;
   border-radius: 5px;
   margin-top: 8px;
   display: flex;
+  font-family: hobo-std, sans-serif;
+  font-style: normal;
 }
 
 .topnav-container {
