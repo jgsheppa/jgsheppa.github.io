@@ -17,20 +17,16 @@ body, body * {
  
 }
 
-.front {
-  background-color: #35caa2;
-}
-
 header h1{
-border-style: solid;
-border-color: #121212;
-border-width: 5px;
-border-radius: 12px;
-padding: 10px 20px 10px 20px;
-font-weight: bold;
-font-size: 40px;
-text-align: left;
-background-color: #FAEC8C;
+  border-style: solid;
+  border-color: #121212;
+  border-width: 5px;
+  border-radius: 12px;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: left;
+  background-color: #FAEC8C;
 }
 
 .alt-header {
@@ -155,7 +151,9 @@ margin-bottom: 32px;
     display: flex;
   }
 
-  .img {
-    width: 100%; 
-    height: auto; 
-  }
+.butch_img {
+  width: 100%; 
+  height: auto; 
+  background-image: url(1969-butch-cassidy-and-the-sundance-kid.jpg);
+  transform: rotate(0.9turn);
+}
