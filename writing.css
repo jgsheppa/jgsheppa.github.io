@@ -71,6 +71,7 @@ header h1{
 .topnav a:hover {
   transition: color;
   transition-duration: 500ms;
+  transition-timing-function: linear;
   background-color: #FFBE0D;
   color: white;
   

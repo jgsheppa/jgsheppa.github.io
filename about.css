@@ -111,6 +111,7 @@ margin-bottom: 32px;
 .topnav a:hover {
   transition: color;
   transition-duration: 500ms;
+  transition-timing-function: linear;
   background-color: #FFBE0D;
   color: white;
 }
