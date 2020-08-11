@@ -109,9 +109,10 @@ margin-bottom: 32px;
 
 /* Change the color of links on hover */
 .topnav a:hover {
+  transition: color;
+  transition-duration: 500ms;
   background-color: #FFBE0D;
   color: white;
-  
 }
 
 /* Add a color to the active/current link */

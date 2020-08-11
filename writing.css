@@ -16,10 +16,6 @@ body, body * {
   box-sizing: border-box;
 }
 
-.front {
-  background-color: #35caa2;
-}
-
 header h1{
   border-style: solid;
   margin-right: 975px;
@@ -73,6 +69,8 @@ header h1{
 
 /* Change the color of links on hover */
 .topnav a:hover {
+  transition: color;
+  transition-duration: 500ms;
   background-color: #FFBE0D;
   color: white;
   
@@ -96,7 +94,7 @@ header h1{
     border-color: #121212;
     border-radius: 4px;
     padding: 4px;
-    background-color:  #ffbe0d;
+    background-color:  #FFBE0D;
 }
 
 .topnav-container {
@@ -122,33 +120,42 @@ header h1{
   
 }
 
+/*styling for the pagelinks*/
 .pagelink {
-    color: #121212; 	
-    font-weight: bold;
-    text-align: center;
-    padding: 12px 16px;
-    font-size: 17px;
-    background-color: #FAEC8C;
-    overflow: hidden;
-    margin-top: 24px;
-    margin-bottom: 32px;
-    margin-left: 48px;
-    border-style: solid;
-    border-color: #121212;
-    border-radius: 5px;
+  color: #FF4860;
+  font-family: hobo-std, sans-serif; 	
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 16px;
+  font-size: 16px;
+  background-color: white;
+  overflow: hidden;
+  margin-top: 24px;
+  margin-bottom: 32px;
+  margin-left: 48px;
+  border-style: solid;
+  border-color: #121212;
+  border-radius: 4px;
   }
   
 .pagelink a { 
-    text-decoration: none;color: #121212; 	
-    font-weight: bold;
-    text-align: center;
-    font-size: 17px;
+  text-decoration: none;
+  color: #FF4860; 	
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
 }
 
 .pagelink_container {
   display: flex;
   margin-bottom: 64px;
 }
+
+.pagelink_container div a:hover {
+  display: flex;
+  background-color: #FFBE0D;
+}
+/*-----------------*/
 
 .flexbox {
   display: flex;
