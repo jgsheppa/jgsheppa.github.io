@@ -148,13 +148,6 @@ body {
   line-height: 1.5;
 }
 
-.nook-row {
-  width: 25%;
-  margin-left: 100px;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  padding: 10px;
-}
 
 .footer { 
   background-color: white;
@@ -171,6 +164,12 @@ body {
 }
 
 .image-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  
+}
+
+.nook-row {
+  padding: 20px;
 }
