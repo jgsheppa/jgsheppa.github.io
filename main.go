@@ -8,16 +8,18 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
+	"github.com/jgsheppa/jgsheppa.github.io/controllers"
 )
 
 func main() {
 	r := chi.NewRouter()
 	r.Use(middleware.Logger)
 
+	view := controllers.NewUser()
+
 	// Index handler
-	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("hi"))
-	})
+	r.Get("/", view.ProfileView.Render)
+	r.NotFound(view.NotFoundView.Render)
 
 	// Create a route along /files that will serve contents from
 	// the ./data/ folder.
