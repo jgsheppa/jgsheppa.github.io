@@ -1,6 +1,6 @@
 {{define "bootstrap"}}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +8,30 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="James Sheppard's personal site">
     <meta name="author" content="James Sheppard">
-
     <title>jgsheppa</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      }
+    </script>
+    <script>
+      function toggleDarkMode() {
+        console.log("hey")
+        var element = document.body;
+        console.log("element", element)
+        element.classList.toggle("dark");
+      }
+    </script>
   </head>
 
-  <body class="d-flex flex-column min-vh-100" >
-    <div class="container">
-      {{template "yield" }}
+  <body class="dark grid h-screen bg-slate-900" >
+    <div class="flex flex-col h-full">
+      <main class="flex grow justify-center items-center">
+        {{template "yield" }}
+      </main>
     </div>
-  {{ template "footer" }}
   </body>
 </html>
 {{end}}

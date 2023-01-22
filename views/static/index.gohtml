@@ -1,10 +1,34 @@
-{{define "yield" }}
-  <div class="row">
-    <div class="col-md-4 col-md-offset-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading ">James Sheppard</div>
-      </div>
+{{define "yield"}}
+  <div class="grid gap-y-4">
+    {{template "darkmodeButton"}}
+    {{template "card"}}
+    {{template "githubLink"}}
+    {{template "linkedInLink"}}
+  </div>
+{{end}}
+
+
+{{define "card" }}
+  <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl sm:w-96">
+    <img class="border border-slate-800 rounded-full" src="/images/james_avatar.jpg"/>
+    <div class="max-w-xs">
+      <h1 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Biography</h1>
+      <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+        My name is James and I'm a frontend developer at Zurich Insurance. In my free time, I like programming in Go, reading books, and going on walks with my wife.
+        Check out my social links below to contact me or learn more about my work.
+      </p>
     </div>
   </div>
 {{end}}
 
+{{define "githubLink"}}
+  <a class="flex items-center bg-white hover:bg-slate-200 hover:dark:bg-slate-600 text-slate-900 dark:text-slate-400 dark:bg-slate-800 rounded-lg px-4 py-4 ring-1 ring-slate-900/5 shadow-xl sm:w-96" target="_blank" href="https://github.com/jgsheppa">Github&nbsp;<img class="h-3 w-3" src="/images/external.svg"/></a>
+{{end}}
+
+{{define "linkedInLink"}}
+  <a class="flex items-center bg-white hover:bg-slate-200 hover:dark:bg-slate-600 text-slate-900 dark:text-slate-400 dark:bg-slate-800 rounded-lg px-4 py-4 ring-1 ring-slate-900/5 shadow-xl sm:w-96" target="_blank" href="https://www.linkedin.com/in/jgsheppa/">LinkedIn&nbsp;<img class="h-3 w-3" src="/images/external.svg"/></a>
+{{end}}
+
+{{define "darkmodeButton"}}
+  <button class="flex items-center bg-white hover:bg-slate-200 hover:dark:bg-slate-600 text-slate-900 dark:text-slate-400 dark:bg-slate-800 rounded-lg px-4 py-4 ring-1 ring-slate-900/5 shadow-xl sm:w-96" target="_blank" onclick="toggleDarkMode()">Toggle Color Scheme</button>
+{{end}}
