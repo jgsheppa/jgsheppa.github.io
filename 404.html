@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="James Sheppard's personal site" />
+    <meta name="author" content="James Sheppard" />
+    <title>jgsheppa</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      };
+    </script>
+    <script>
+      function toggleDarkMode() {
+        var element = document.body;
+        element.classList.toggle('dark');
+      }
+    </script>
+  </head>
+
+  <body class="dark grid h-screen bg-slate-900">
+    <div class="flex flex-col h-full">
+      <main class="flex grow justify-center items-center">
+        <div
+          class="bg-white dark:bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl sm:w-96 h-auto"
+        >
+          <div class="grid grid-y-4 max-w-xs h-56">
+            <h1
+              class="text-slate-900 dark:text-white text-center mt-5 text-4xl"
+            >
+              404
+            </h1>
+            <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+              This is a pretty simple site! There's only a homepage.
+            </p>
+            <a
+              class="dark:bg-white bg-slate-800 hover:bg-slate-600 hover:dark:bg-slate-200 dark:text-slate-800 text-gray-50 rounded-lg px-4 py-4 ring-1 ring-slate-900/5 shadow-xl text-center text-xl h-16"
+              href="/"
+              >Back to Homepage</a
+            >
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
