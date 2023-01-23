@@ -2,14 +2,20 @@ package views
 
 import (
 	"bytes"
+	"embed"
 	"html/template"
 	"io"
+	"io/fs"
 	"net/http"
-	"path/filepath"
 )
 
+//go:embed static/*gohtml
+var content embed.FS
+
+//go:embed layouts/*.gohtml
+var layouts embed.FS
+
 var (
-	LayoutDir   string = "views/layouts/"
 	TemplateDir string = "views/"
 	TemplateExt string = ".gohtml"
 )
@@ -62,9 +68,14 @@ func (v *View) Render(w http.ResponseWriter, r *http.Request) {
 // Returns a slice of strings
 // representing the layout files
 func layoutFiles() []string {
-	files, err := filepath.Glob(LayoutDir + "*" + TemplateExt)
+
+	files, err := fs.Glob(layouts, "layouts/*.gohtml")
 	if err != nil {
 		panic(err)
+	}
+
+	for i, file := range files {
+		files[i] = TemplateDir + file
 	}
 	return files
 }
