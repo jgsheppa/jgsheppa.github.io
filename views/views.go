@@ -9,9 +9,6 @@ import (
 	"net/http"
 )
 
-//go:embed static/*gohtml
-var content embed.FS
-
 //go:embed layouts/*.gohtml
 var layouts embed.FS
 
