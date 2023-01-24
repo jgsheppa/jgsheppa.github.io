@@ -3,8 +3,6 @@ WORKDIR /
 
 COPY go.mod ./
 COPY go.sum ./
-COPY images/ ./images
-COPY views/ ./views
 
 RUN go mod download
 
