@@ -9,4 +9,4 @@ The Go version of this site only has one dependency in the Chi router, uses Go
 HTML templates to display the pages, and even utilizes the Go embed package for
 the layouts. A Dockerfile is used to deploy this project on Render. 
 
-Check out this small project and feel free to let me know what you think!
+Check out the site and feel free to let me know what you think!
