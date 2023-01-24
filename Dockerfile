@@ -3,6 +3,8 @@ WORKDIR /
 
 COPY go.mod ./
 COPY go.sum ./
+COPY images/ ./images
+COPY views/ ./views
 
 RUN go mod download
 
@@ -10,11 +12,13 @@ COPY . ./
 
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .
 
-FROM scratch
-WORKDIR /root/
+FROM gcr.io/distroless/base-debian11:nonroot
+WORKDIR /
 
-COPY images/ images/
-COPY views/ views/
 COPY --from=builder /app ./
+COPY --from=builder /views ./views
+COPY --from=builder /images ./images
+
+EXPOSE 8080
 
 CMD ["./app"]
